@@ -237,7 +237,7 @@ var estadoprincipal = {
 
 		var hitsPlatform = juego.physics.arcade.collide(mario, plataformas);
 
-		if (mainAudio.stop()){
+		if (inicio.stop()){
 	         //snd.volume = 0.2;
 	        inicio.play();
 		}
