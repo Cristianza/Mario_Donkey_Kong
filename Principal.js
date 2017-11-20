@@ -110,6 +110,7 @@ var estadoprincipal = {
 
 	create: function(){
 		inicio = juego.add.audio("inicial");
+		inicio.play();
 		juego.physics.startSystem(Phaser.Physics.ARCADE);
 		juego.add.tileSprite(0,0,650,700,'fondo');
 
