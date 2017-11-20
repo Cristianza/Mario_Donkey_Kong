@@ -105,7 +105,7 @@ var estadoprincipal = {
 		juego.load.audio('salto', 'Sonidos/Salto.mp3');
 		juego.load.audio('moneda', 'Sonidos/Moneda.mp3');
 		juego.load.audio('pierde', 'Sonidos/Pierde.mp3');
-		juego.load.audio('inicial', 'Sonidos/Main.mp3');
+		//juego.load.audio('inicial', 'Sonidos/Main.mp3');
 	},
 
 	create: function(){
