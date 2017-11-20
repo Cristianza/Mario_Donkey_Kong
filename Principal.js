@@ -239,6 +239,10 @@ var estadoprincipal = {
 
 		var hitsPlatform = juego.physics.arcade.collide(mario, plataformas);
 
+		inicio = juego.add.audio("inicial");
+	    //snd.volume = 0.2;
+	    inicio.play();
+
 
 		mario.body.velocity.x = 0;
 
