@@ -10,6 +10,7 @@ var moneda;
 var coinsText;
 var quantCoins = 0;
 var princesa;
+var inicio;
 function myFunction(barril) {
 	if (barril.body.touching.left){
 		barril.body.velocity.x = 150;
@@ -108,9 +109,9 @@ var estadoprincipal = {
 	},
 
 	create: function(){
-		var snd = juego.add.audio("inicial");
-			//snd.volume = 0.2;
-			snd.play();
+		inicio = juego.add.audio("inicial");
+	    //snd.volume = 0.2;
+	    inicio.play();
 		juego.physics.startSystem(Phaser.Physics.ARCADE);
 		juego.add.tileSprite(0,0,650,700,'fondo');
 
