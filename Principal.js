@@ -238,9 +238,9 @@ var estadoprincipal = {
 
 		var hitsPlatform = juego.physics.arcade.collide(mario, plataformas);
 
-		/*if (inicio.stop()){
+		if (inicio.stop()){
 	        inicio.play();
-		}*/
+		}
 		mario.body.velocity.x = 0;
 
 		if (cursores.left.isDown) {
