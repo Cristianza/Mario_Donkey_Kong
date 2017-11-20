@@ -105,12 +105,12 @@ var estadoprincipal = {
 		juego.load.audio('salto', 'Sonidos/Salto.mp3');
 		juego.load.audio('moneda', 'Sonidos/Moneda.mp3');
 		juego.load.audio('pierde', 'Sonidos/Pierde.mp3');
-		//juego.load.audio('inicial', 'Sonidos/Main.mp3');
+		juego.load.audio('inicial', 'Sonidos/Main.mp3');
 	},
 
 	create: function(){
-		//inicio = juego.add.audio("inicial");
-		//inicio.play();
+		inicio = juego.add.audio("inicial");
+		inicio.play();
 		juego.physics.startSystem(Phaser.Physics.ARCADE);
 		juego.add.tileSprite(0,0,650,700,'fondo');
 
