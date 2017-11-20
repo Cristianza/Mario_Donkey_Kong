@@ -110,8 +110,6 @@ var estadoprincipal = {
 
 	create: function(){
 		inicio = juego.add.audio("inicial");
-	    //snd.volume = 0.2;
-	    inicio.play();
 		juego.physics.startSystem(Phaser.Physics.ARCADE);
 		juego.add.tileSprite(0,0,650,700,'fondo');
 
@@ -239,11 +237,10 @@ var estadoprincipal = {
 
 		var hitsPlatform = juego.physics.arcade.collide(mario, plataformas);
 
-		inicio = juego.add.audio("inicial");
-	    //snd.volume = 0.2;
-	    inicio.play();
-
-
+		if (mainAudio.stop()){
+	         //snd.volume = 0.2;
+	        inicio.play();
+		}
 		mario.body.velocity.x = 0;
 
 		if (cursores.left.isDown) {
