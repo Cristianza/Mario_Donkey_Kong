@@ -35,6 +35,9 @@ function collectCoin(mario, moneda) {
 function finishGame() {
 	reset();
 	juego.state.start('lose');
+	var snd = juego.add.audio("pierde");
+	//snd.volume = 0.2;
+    snd.play();
 	location.href='Perder.html';
 }
 function winsTheGame() {
